@@ -1,3 +1,4 @@
+import os
 import time
 import csv
 from datetime import datetime
@@ -16,7 +17,8 @@ def run_mtr(server_id, probe_name, target_ip):
     # Set up Chrome options and driver
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
-    driver = webdriver.Chrome(executable_path="path/to/chromedriver", options=chrome_options)
+    #chrome_options.add_argument("--headless")
+    driver = webdriver.Chrome(options=chrome_options)
 
     # Load the MTR in the browser
     driver.get(url)
@@ -29,11 +31,18 @@ def run_mtr(server_id, probe_name, target_ip):
     time.sleep(15)
 
     # Get the current date and time in 24h format
-    now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    now = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+    
+    # Get the current date in YYYY-MM-DD format
+    today = datetime.now().strftime("%d-%m-%Y")
+    
+    # Create the folder for today's screenshots
+    folder_path = f"path/to/folder_{today}"
+    os.makedirs(folder_path, exist_ok=True)
 
     # Take a screenshot of the full page and save it with a unique name
     file_name = f"{probe_name}_{target_ip}_{now}.png"
-    file_path = f"path/to/{file_name}"
+    file_path = f"{folder_path}/{file_name}"
     driver.save_screenshot(file_path)
 
     # Close the browser
@@ -49,7 +58,10 @@ def main():
     target_ip = input("Enter the IP address to trace: ")
 
      # Get the number of windows to run MTR tests
-    num_windows = int(input("Enter the number of windows to run MTR tests simultaneously: "))
+    num_windows = int(input("Enter the number of threads: "))
+    while not 1 <= int(num_windows) <= 24:
+        num_windows = input("Invalid input. Number of threads should be between 1 and 24: ")
+    #num_windows = int(num_windows)
 
     # Split the servers into batches of num_windows
     batches = [servers[i:i+num_windows] for i in range(0, len(servers), num_windows)]

@@ -1,124 +1,124 @@
-server_id,probe_name
-97,Almaty (Gcore)
-152,Amsterdam (3W Infra)
-79,Amsterdam (Bakker IT)
-121,Amsterdam (HostHatch)
-185,Amsterdam (Hyonix)
-150,Amsterdam (Misaka)
-149,Amsterdam (Scaleway)
-207,Amsterdam (SiteFast)
-81,Amsterdam (xTom)
-92,Ashburn (Gcore)
-148,Ashburn (Hetzner)
-202,Ashburn (Hyonix)
-1,Ashburn (Misaka)
-226,Athens (Enahost)
-145,Auckland (Zappie Host)
-199,Baku (Gcore)
-139,Bangkok (Scloud)
-180,Beijing (Tencent Cloud)
-118,Beijing (Ucloud)
-211,Berlin (IONOS)
-215,Berlin (IONOS)
-229,Berlin (Misaka)
-230,Berlin (Misaka)
-219,Bogot� (Maxihost)
-169,Bucharest (Gcore)
-209,Changzhou (China Unicom)
-181,Chengdu (Tencent Cloud)
-100,Chicago (Gcore)
-155,Chicago (HostHatch)
-112,Chi?in?u (Gcore)
-205,Dallas (Hyonix)
-54,Dallas (LSN)
-218,Dublin (iDrive)
-173,Dublin (Misaka)
-87,D�sseldorf (xTom)
-151,El Marqu�s (Gcore)
-204,El Segundo (Hyonix)
-213,Falkenstein (Hetzner)
-189,Fortaleza (Gcore)
-134,Frankfurt (AkkoCloud)
-119,Guangzhou (Ucloud)
-12,Helsinki (Hetzner)
-212,Hillsboro (Hetzner)
-137,Ho Chi Minh City (Scloud)
-187,Hong Kong (AperNet)
-197,Hong Kong (BGPTO)
-50,Hong Kong (DMIT)
-115,Hong Kong (Kamatera)
-90,Hong Kong (Misaka)
-161,Hong Kong (Misaka)
-20,Hong Kong (xTom)
-36,Istanbul (Gcore)
-28,Johannesburg (Misaka)
-168,Kyiv (Gcore)
-167,Kyiv (Misaka)
-153,Lagos (Misaka)
-84,Lagos (Scloud)
-30,Las Vegas (BuyVM)
-200,Lima (Gcore)
-206,London (Hyonix)
-51,London (Misaka)
-102,London (xTom)
-49,Los Angeles (DMIT)
-40,Los Angeles (Misaka)
-105,Luxembourg (Gcore)
-33,Madrid (Misaka)
-88,Manila (Scloud)
-69,Marseille (Misaka)
-188,Melbourne (AperNet)
-93,Miami (Gcore)
-198,Minneapolis (Gcore)
-177,Moscow (Misaka)
-178,Moscow (Misaka)
-182,Nanjing (Tencent Cloud)
-138,New Taipei City (Scloud)
-85,New York (xTom)
-227,Nicosia (OneProvider)
-5,North Kansas City (Misaka)
-214,Nuremberg (Hetzner)
-6,Pittsburgh (TeraSwitch)
-201,Reston (Hyonix)
-171,San Jose (AkkoCloud)
-220,San Jos� (Maxihost)
-132,San Jose (Misaka)
-183,San Jose (Misaka)
-156,San Jose (xTom)
-94,Santa Clara (Gcore)
-221,Santiago (Maxihost)
-29,S�o Paulo (Misaka)
-89,Seattle (Misaka)
-104,Secaucus (Gcore)
-203,Secaucus (Hyonix)
-3,Secaucus (Misaka)
-52,Seoul (Moack)
-126,Shanghai (China Telecom)
-172,Shanghai (Tencent Cloud)
-117,Shanghai (Ucloud)
-68,Singapore (BGPTO)
-122,Singapore (HostHatch)
-140,Singapore (Misaka)
-176,Singapore (Misaka)
-32,Sofia (Melbicom)
-22,Sydney (xTom)
-15,Tallinn (xTom)
-55,Tel Aviv (Gcore)
-113,Tel Aviv (Kamatera)
-196,Tokyo (BGPTO)
-114,Tokyo (DMIT)
-159,Tokyo (DMIT)
-160,Tokyo (HostHatch)
-116,Tokyo (Misaka)
-158,Tokyo (Misaka)
-18,Tokyo (xTom)
-110,Toronto (Kamatera)
-53,Toronto (Xenyth)
-86,Tukwila (xTom)
-14,Vienna (Alwyzon)
-157,Vienna (HostHatch)
-106,Warsaw (Gcore)
-186,Yerevan (Gcore)
-210,Zhumadian (China Mobile)
-184,Zurich (HostHatch)
-109,Zurich (Misaka)
+server_id,probe_name,location
+97,Almaty (Gcore),Almaty
+152,Amsterdam (3W Infra),Amsterdam
+79,Amsterdam (Bakker IT),Amsterdam
+121,Amsterdam (HostHatch),Amsterdam
+185,Amsterdam (Hyonix),Amsterdam
+150,Amsterdam (Misaka),Amsterdam
+149,Amsterdam (Scaleway),Amsterdam
+207,Amsterdam (SiteFast),Amsterdam
+81,Amsterdam (xTom),Amsterdam
+92,Ashburn (Gcore),Ashburn
+148,Ashburn (Hetzner),Ashburn
+202,Ashburn (Hyonix),Ashburn
+1,Ashburn (Misaka),Ashburn
+226,Athens (Enahost),Athens
+145,Auckland (Zappie Host),Auckland
+199,Baku (Gcore),Baku
+139,Bangkok (Scloud),Bangkok
+180,Beijing (Tencent Cloud),Beijing
+118,Beijing (Ucloud),Beijing
+211,Berlin (IONOS),Berlin
+215,Berlin (IONOS),Berlin
+229,Berlin (Misaka),Berlin
+230,Berlin (Misaka),Berlin
+219,Bogot� (Maxihost),Bogot�
+169,Bucharest (Gcore),Bucharest
+209,Changzhou (China Unicom),Changzhou
+181,Chengdu (Tencent Cloud),Chengdu
+100,Chicago (Gcore),Chicago
+155,Chicago (HostHatch),Chicago
+112,Chi?in?u (Gcore),Chi?in?u
+205,Dallas (Hyonix),Dallas
+54,Dallas (LSN),Dallas
+218,Dublin (iDrive),Dublin
+173,Dublin (Misaka),Dublin
+87,D�sseldorf (xTom),D�sseldorf
+151,El Marqu�s (Gcore),El Marqu�s
+204,El Segundo (Hyonix),El Segundo
+213,Falkenstein (Hetzner),Falkenstein
+189,Fortaleza (Gcore),Fortaleza
+134,Frankfurt (AkkoCloud),Frankfurt
+119,Guangzhou (Ucloud),Guangzhou
+12,Helsinki (Hetzner),Helsinki
+212,Hillsboro (Hetzner),Hillsboro
+137,Ho Chi Minh City (Scloud),Ho Chi Minh City
+187,Hong Kong (AperNet),Hong Kong
+197,Hong Kong (BGPTO),Hong Kong
+50,Hong Kong (DMIT),Hong Kong
+115,Hong Kong (Kamatera),Hong Kong
+90,Hong Kong (Misaka),Hong Kong
+161,Hong Kong (Misaka),Hong Kong
+20,Hong Kong (xTom),Hong Kong
+36,Istanbul (Gcore),Istanbul
+28,Johannesburg (Misaka),Johannesburg
+168,Kyiv (Gcore),Kyiv
+167,Kyiv (Misaka),Kyiv
+153,Lagos (Misaka),Lagos
+84,Lagos (Scloud),Lagos
+30,Las Vegas (BuyVM),Las Vegas
+200,Lima (Gcore),Lima
+206,London (Hyonix),London
+51,London (Misaka),London
+102,London (xTom),London
+49,Los Angeles (DMIT),Los Angeles
+40,Los Angeles (Misaka),Los Angeles
+105,Luxembourg (Gcore),Luxembourg
+33,Madrid (Misaka),Madrid
+88,Manila (Scloud),Manila
+69,Marseille (Misaka),Marseille
+188,Melbourne (AperNet),Melbourne
+93,Miami (Gcore),Miami
+198,Minneapolis (Gcore),Minneapolis
+177,Moscow (Misaka),Moscow
+178,Moscow (Misaka),Moscow
+182,Nanjing (Tencent Cloud),Nanjing
+138,New Taipei City (Scloud),New Taipei City
+85,New York (xTom),New York
+227,Nicosia (OneProvider),Nicosia
+5,North Kansas City (Misaka),North Kansas City
+214,Nuremberg (Hetzner),Nuremberg
+6,Pittsburgh (TeraSwitch),Pittsburgh
+201,Reston (Hyonix),Reston
+171,San Jose (AkkoCloud),San Jose
+220,San Jose (Maxihost),San Jose
+132,San Jose (Misaka),San Jose
+183,San Jose (Misaka),San Jose
+156,San Jose (xTom),San Jose
+94,Santa Clara (Gcore),Santa Clara
+221,Santiago (Maxihost),Santiago
+29,S�o Paulo (Misaka),S�o Paulo
+89,Seattle (Misaka),Seattle
+104,Secaucus (Gcore),Secaucus
+203,Secaucus (Hyonix),Secaucus
+3,Secaucus (Misaka),Secaucus
+52,Seoul (Moack),Seoul
+126,Shanghai (China Telecom),Shanghai
+172,Shanghai (Tencent Cloud),Shanghai
+117,Shanghai (Ucloud),Shanghai
+68,Singapore (BGPTO),Singapore
+122,Singapore (HostHatch),Singapore
+140,Singapore (Misaka),Singapore
+176,Singapore (Misaka),Singapore
+32,Sofia (Melbicom),Sofia
+22,Sydney (xTom),Sydney
+15,Tallinn (xTom),Tallinn
+55,Tel Aviv (Gcore),Tel Aviv
+113,Tel Aviv (Kamatera),Tel Aviv
+196,Tokyo (BGPTO),Tokyo
+114,Tokyo (DMIT),Tokyo
+159,Tokyo (DMIT),Tokyo
+160,Tokyo (HostHatch),Tokyo
+116,Tokyo (Misaka),Tokyo
+158,Tokyo (Misaka),Tokyo
+18,Tokyo (xTom),Tokyo
+110,Toronto (Kamatera),Toronto
+53,Toronto (Xenyth),Toronto
+86,Tukwila (xTom),Tukwila
+14,Vienna (Alwyzon),Vienna
+157,Vienna (HostHatch),Vienna
+106,Warsaw (Gcore),Warsaw
+186,Yerevan (Gcore),Yerevan
+210,Zhumadian (China Mobile),Zhumadian
+184,Zurich (HostHatch),Zurich
+109,Zurich (Misaka),Zurich
