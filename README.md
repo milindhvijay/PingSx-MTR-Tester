@@ -44,7 +44,7 @@ Note: It is recommended to run this script on a computer with a fast and stable 
 Contributions are welcome! If you would like to contribute to this project, please submit a pull request.
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://choosealicense.com/licenses/mit/) for details.
+This project is licensed under the MIT License - see the [LICENSE](PingSx-MTR-Tester/LICENSE) for details.
 ## Acknowledgements
 
 This project was inspired by Ping.Sx, an online tool for performing MTR tests.
