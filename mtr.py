@@ -17,7 +17,7 @@ def run_mtr(server_id, probe_name, target_ip, folder_path):
     # Set up Chrome options and driver
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
-    #chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     driver = webdriver.Chrome(options=chrome_options)
 
     # Load the MTR in the browser
