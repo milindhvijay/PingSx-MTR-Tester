@@ -10,7 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor
 
-def run_mtr(server_id, probe_name, target_ip):
+def run_mtr(server_id, probe_name, target_ip, folder_path):
     # Construct the URL for the MTR
     url = f"https://ping.sx/mtr?t={target_ip}&p={server_id}"
 
@@ -37,12 +37,12 @@ def run_mtr(server_id, probe_name, target_ip):
     today = datetime.now().strftime("%d-%m-%Y")
     
     # Create the folder for today's screenshots
-    folder_path = f"path/to/folder_{today}"
+    folder_path = os.path.join(folder_path, f"ping.sx-mtr_{today}")
     os.makedirs(folder_path, exist_ok=True)
 
     # Take a screenshot of the full page and save it with a unique name
     file_name = f"{probe_name}_{target_ip}_{now}.png"
-    file_path = f"{folder_path}/{file_name}"
+    file_path = os.path.join(folder_path, file_name)
     driver.save_screenshot(file_path)
 
     # Close the browser
@@ -57,11 +57,15 @@ def main():
     # Get the IP address to trace
     target_ip = input("Enter the IP address to trace: ")
 
-     # Get the number of windows to run MTR tests
+    # Get the number of windows to run MTR tests
     num_windows = int(input("Enter the number of threads: "))
     while not 1 <= int(num_windows) <= 24:
         num_windows = input("Invalid input. Number of threads should be between 1 and 24: ")
-    #num_windows = int(num_windows)
+        
+    # Get the folder path to save screenshots
+    folder_path = input("Enter the folder path to save screenshots: ")
+    while not os.path.isdir(folder_path):
+        folder_path = input("Invalid input. Enter a valid folder path to save screenshots: ")
 
     # Split the servers into batches of num_windows
     batches = [servers[i:i+num_windows] for i in range(0, len(servers), num_windows)]
@@ -72,7 +76,7 @@ def main():
             for server in batch:
                 server_id = server['server_id']
                 probe_name = server['probe_name']
-                executor.submit(run_mtr, server_id, probe_name, target_ip)
+                executor.submit(run_mtr, server_id, probe_name, target_ip, folder_path)
 
     print("MTR tests complete")
 
